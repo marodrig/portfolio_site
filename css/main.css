@@ -1,0 +1,318 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*html elements style*/
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #424242;  
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+a.github-link {
+    font-weight: 400;
+    color: #008a45;
+    text-decoration: none;
+}
+
+a.github-link:hover {
+    background-color: #efebdc;
+}
+
+/*css classes*/
+
+.header {
+    border-bottom: 5px solid #7d97ad;
+    margin-bottom: 25px;
+}
+
+.header-logo { 
+    height: 85px;
+    width: 85px;
+    display: inline-block;
+    float: left;
+}
+
+.header-title{
+    vertical-align: text-top;
+    text-align: right;
+    text-transform: uppercase;
+    color: #2d3c49;
+    font-size: 270%;
+}
+
+.header-subtitle{
+    vertical-align: middle;
+    text-transform: lowercase;
+    color: #2d3c49;
+    font-size: 150%;
+    text-align: right;
+}
+
+.jumbo img{
+    width: 100%;
+    height: 65%;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.projects-container {
+    margin-bottom: 20px;
+}
+
+/*flex-box container class for projects*/
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.projects-title {
+    padding-bottom: 10px;
+    color: #7d97ad;
+}
+
+.project-card {
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.12);
+    max-width: 380px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-name {
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.project-image {
+    max-width: 100%;
+    width: 100px;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 17px;
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+/*
+*
+* footer
+*
+*/
+.footer {
+    border-top: 1px solid #bbb;
+    padding: 6px 0 20px;
+    text-align: center;
+}
+
+/*Viewport 1 -- less than 600px wide.*/
+
+@media screen and (max-width: 600px){
+    .header {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .logo {
+        padding-bottom: 10px;
+    }
+
+    .name {
+        font-size: 38px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .hero {
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        padding: 0 16px;
+    }
+
+    .project {
+        padding-bottom: 10px;
+    }
+
+    .projects-title {
+        font-size: 22px;
+    }
+
+    .project-card {
+        min-height: 380px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    .project {
+        padding-bottom: 16px;
+    }
+
+    .projects-title {
+        font-size: 26px;
+    }
+
+}
+
+/*Viewport 2 - between 600px and 870px*/
+@media screen and (min-width: 600px){
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .name-title {
+        text-align: right;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .projects-container {
+        padding: 0 20px;
+    }
+
+    .projects-list {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .projects-title {
+        font-size: 28px;
+    }
+
+    .project {
+        width: calc(50%);
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 739px) {
+    .project {
+        padding-bottom: 10px;
+    }
+
+    .project:nth-child(odd) {
+        padding-right: 5px;
+    } 
+
+    .project:nth-child(even) {
+        padding-left: 5px;
+    }
+
+    .project-card {
+        min-height: 360px;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 869px) {
+    .project {
+        padding-bottom: 16px;
+    }
+
+    .project:nth-child(odd) {
+        padding-right: 8px;
+    }
+
+    .project:nth-child(even) {
+        padding-left: 8px;
+    }
+
+    .project-card {
+        height: 400px;
+    }
+
+    .project-description {
+        font-size: 18px;
+    }
+}
+/**************************************************
+ * Viewport 870px - 3 Columns
+ **************************************************/
+
+@media screen and (min-width: 870px) {
+    .name {
+        font-size: 44px;
+    }
+
+    .project {
+        width: calc(33.3333% - 10px);
+    }
+
+    .projects-title {
+        font-size: 32px;
+    }
+
+}
+
+/**************************************************
+ * Viewport 1100px - 3 Columns and Fixed width
+ **************************************************/
+
+@media screen and (min-width: 1100px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .projects-container {
+        width: 1100px;
+        padding: 0;
+    }
+
+    .project {
+        width: calc(33.3333% - 16px);
+    }
+
+    .projects-title {
+        font-size: 36px;
+    }
+
+    .project-card {
+        height: 400px;
+    }
+
+    .project-name {
+        font-size: 24px;
+    }
+
+    .project-description {
+        font-size: 18px;
+    }
+
+}
