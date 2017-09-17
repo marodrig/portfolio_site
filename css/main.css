@@ -73,7 +73,6 @@ a.github-link:hover {
 /*flex-box container class for projects*/
 .projects-list {
     display: flex;
-    flex-wrap: wrap;
     flex-flow: column wrap;
 }
 
@@ -206,7 +205,7 @@ a.github-link:hover {
     }
 
     .project {
-        width: calc(50%);
+        width: 50%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 739px) {
