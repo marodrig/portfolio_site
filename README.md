@@ -52,3 +52,5 @@ Simply open index.html using your Internet Browser of your choice.
 ## Credits
 
 ## License
+
+[LICENSE](LICENSE)
